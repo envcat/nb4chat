@@ -19,7 +19,7 @@ def process_ocr_task(file_name: str):
 
 
 @app.post("/upload")
-async def upload_pdf(file: UploadFile, background_tasks: BackgroundTasks):
+def upload_pdf(file: UploadFile, background_tasks: BackgroundTasks):
     file_id = f"{uuid.uuid4()}-{file.filename}"
 
     s3_client.upload_fileobj(file.file, Bucket.RAW, file_id)
