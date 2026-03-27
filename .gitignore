@@ -20,3 +20,13 @@ wheels/
 
 # macOS
 .DS_Store
+
+# garage
+garage_meta/
+garage_data
+
+# pgadmin
+pgadmin_data
+
+# postgres
+postgres_data
