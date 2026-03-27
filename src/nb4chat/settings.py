@@ -24,13 +24,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings()  # type: ignore
-
-
-def main():
-    from rich.pretty import pprint
-
-    pprint(settings)
-
-
-if __name__ == "__main__":
-    main()
